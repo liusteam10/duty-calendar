@@ -1,0 +1,1 @@
+{ "desc": "值班中枢小程序页面索引", "rules": [{ "action": "allow", "page": "*" }] }

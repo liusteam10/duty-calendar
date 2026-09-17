@@ -1,0 +1,24 @@
+<view class="page safe-bottom">
+  <view class="hero-card">
+    <view class="eyebrow">DUTY OPERATIONS / 2026</view>
+    <view class="hero-title">我的下一次值班</view>
+    <view class="hero-date">2026年9月22日 · 夜班</view>
+    <view class="hero-meta">18:00—次日09:00　|　林晓晨</view>
+  </view>
+  <view class="section-head"><text>{{monthTitle}}</text><text class="muted">已发布</text></view>
+  <view class="week-row"><text wx:for="{{['日','一','二','三','四','五','六']}}" wx:key="*this">{{item}}</text></view>
+  <view class="calendar-grid">
+    <view wx:for="{{calendar}}" wx:key="date" class="day-card {{item.date === selectedDate ? 'selected' : ''}}" data-date="{{item.date}}" bindtap="onDateTap">
+      <text class="day-number">{{item.day}}</text>
+      <text class="count leader">带班 {{item.leaderCount}}</text>
+      <text class="count day">白班 {{item.dayCount}}</text>
+      <text class="count night">夜班 {{item.nightCount}}</text>
+    </view>
+  </view>
+  <view class="detail-card">
+    <view class="section-head"><text>{{selectedDate}}</text><text class="muted">当天安排</text></view>
+    <view class="detail-row"><text class="tag leader">带班</text><text>李卫国</text><text class="muted">全天</text></view>
+    <view class="detail-row"><text class="tag day">白班</text><text>林晓晨 · 周岚</text><text class="muted">09:00—18:00</text></view>
+    <view class="detail-row"><text class="tag night">夜班</text><text>陈宇 · 王磊</text><text class="muted">18:00—次日09:00</text></view>
+  </view>
+</view>

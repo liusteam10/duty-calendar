@@ -1,0 +1,23 @@
+# Local and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime/build output
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# Local secrets and CloudBase overrides
+.env
+.env.*
+!.env.example
+miniprogram/.env
+miniprogram/env-config.local.js
+
+# WeChat DevTools local metadata/cache
+miniprogram/.wechat/
+miniprogram/.wx/

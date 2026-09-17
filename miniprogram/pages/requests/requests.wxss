@@ -1,0 +1,4 @@
+.page { padding: 35rpx 28rpx; } .title { color: #15233b; font-size: 42rpx; font-weight: 800; } .subtitle { margin-top: 12rpx; color: #748197; font-size: 22rpx; }
+.request-card { margin-top: 34rpx; padding: 25rpx; border: 1rpx solid #e5eaf1; border-radius: 22rpx; background: #fff; }
+.request-head { display: flex; justify-content: space-between; gap: 10rpx; } .request-title { font-size: 26rpx; font-weight: 800; } .status { padding: 6rpx 12rpx; border-radius: 99rpx; color: #9a641d; background: #fff5e6; font-size: 18rpx; }
+.request-detail { margin-top: 17rpx; color: #748197; font-size: 22rpx; } .actions { display: flex; justify-content: flex-end; gap: 14rpx; margin-top: 23rpx; } button { border: 0; border-radius: 12rpx; font-size: 22rpx; } .reject { color: #15233b; background: #f4f7fb; } .accept, .primary-button { color: #fff; background: #0c1f3d; } .primary-button { margin-top: 30rpx; }

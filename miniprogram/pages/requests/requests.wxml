@@ -1,0 +1,10 @@
+<view class="page safe-bottom">
+  <view class="title">申请中心</view>
+  <view class="subtitle">换班、代班与撤销都会留下记录</view>
+  <view wx:for="{{requests}}" wx:key="id" class="request-card">
+    <view class="request-head"><text class="request-title">{{item.title}}</text><text class="status">{{item.status}}</text></view>
+    <view class="request-detail">{{item.detail}}</view>
+    <view class="actions" wx:if="{{item.status === '待确认'}}"><button class="reject" data-id="{{item.id}}" bindtap="onReject">拒绝</button><button class="accept" data-id="{{item.id}}" bindtap="onAccept">接受申请</button></view>
+  </view>
+  <button class="primary-button">发起新申请</button>
+</view>

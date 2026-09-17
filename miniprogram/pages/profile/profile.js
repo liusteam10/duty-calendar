@@ -1,0 +1,1 @@
+Page({ data: { user: "林晓晨", notificationEnabled: false }, onSubscribe() { this.setData({ notificationEnabled: true }); wx.showToast({ title: "已开启值班通知", icon: "success" }); }, onUnbind() { wx.showModal({ title: "解除绑定", content: "解除后需要重新输入单位口令绑定人员档案。" }); } });

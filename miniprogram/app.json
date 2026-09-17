@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/requests/requests",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "值班中枢",
+    "navigationBarBackgroundColor": "#0c1f3d",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f4f7fb"
+  },
+  "tabBar": {
+    "color": "#748197",
+    "selectedColor": "#3b82f6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "值班" },
+      { "pagePath": "pages/requests/requests", "text": "申请" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
